@@ -3,145 +3,129 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CV — Ton nom</title>
+  <title>CV — Sébastien Dupont</title>
   <style>
-    :root{--accent:#1f6feb;--muted:#6b7280;--bg:#f7fafc;--card:#ffffff}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#0f172a; margin:0; padding:24px}
+    :root{--accent:#2563eb;--muted:#6b7280;--bg:#f8fafc;--card:#fff}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#0f172a;margin:0;padding:24px}
     .container{max-width:900px;margin:0 auto}
-    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);overflow:hidden}
-    header{display:flex;gap:20px;padding:28px}
-    .photo{width:110px;height:110px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);flex:0 0 110px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px}
+    .card{background:var(--card);border-radius:14px;box-shadow:0 6px 18px rgba(15,23,42,.06);overflow:hidden}
+    header{display:flex;gap:20px;align-items:center;padding:28px;border-bottom:1px solid rgba(15,23,42,.06)}
+    .photo{width:110px;height:110px;border-radius:12px;background:url('photo.jpg') center/cover no-repeat,linear-gradient(135deg,var(--accent),#7dd3fc)}
     .meta{flex:1}
-    h1{margin:0;font-size:24px}
-    .role{color:var(--muted);margin-top:6px}
+    h1{margin:0;font-size:26px;color:#0f172a}
+    .role{color:var(--muted);margin-top:4px}
     .contacts{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px;font-size:14px}
-    .badge{background:rgba(31,111,235,0.08);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600}
-
-    main{display:grid;grid-template-columns:1fr 320px}
-    section{padding:20px}
-    .section-title{font-weight:700;margin-bottom:10px;color:#0f172a}
-    .summary{color:var(--muted);line-height:1.5}
-
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{padding:8px 10px;border-radius:8px;background:#f1f5f9;font-size:13px}
-    .skill .level{display:block;font-size:12px;color:var(--muted)}
-
-    .experience{display:flex;flex-direction:column;gap:14px}
-    .job{padding:14px;border-radius:8px;background:#fcfdff;border:1px solid rgba(15,23,42,0.03)}
+    .badge{background:rgba(37,99,235,.08);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 300px}
+    section{padding:24px}
+    .section-title{font-weight:700;margin-bottom:10px;color:#0f172a;font-size:18px}
+    p{line-height:1.6;color:#334155}
+    .experience{display:flex;flex-direction:column;gap:14px;margin-top:10px}
+    .job{padding:14px;border-radius:10px;background:#f9fafb;border:1px solid rgba(15,23,42,.05)}
     .job h3{margin:0;font-size:16px}
-    .job .meta{font-size:13px;color:var(--muted);margin-top:6px}
+    .job .meta{font-size:13px;color:var(--muted);margin-top:4px}
     .job ul{margin:10px 0 0 18px;color:var(--muted)}
-
-    aside{border-left:1px dashed rgba(15,23,42,0.04);padding:20px}
-    .small{font-size:13px;color:var(--muted)}
-    .lang li,.edu li{margin-bottom:8px}
-
-    footer{padding:18px 28px;background:linear-gradient(90deg, rgba(31,111,235,0.06), rgba(125,211,252,0.02));display:flex;justify-content:space-between;align-items:center}
-    .actions a{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
-
-    @media (max-width:880px){main{grid-template-columns:1fr} aside{border-left:none;border-top:1px dashed rgba(15,23,42,0.04);}}
+    aside{border-left:1px dashed rgba(15,23,42,.05);padding:24px}
+    .skills,.lang,.interet{margin-top:10px;font-size:14px;line-height:1.8;color:#334155}
+    footer{padding:18px 28px;background:linear-gradient(90deg,rgba(37,99,235,.06),rgba(125,211,252,.02));display:flex;align-items:center;justify-content:space-between}
+    footer a{color:var(--accent);text-decoration:none;font-weight:600}
+    @media(max-width:880px){main{grid-template-columns:1fr}aside{border-left:none;border-top:1px dashed rgba(15,23,42,.05)}}
   </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
       <header>
-        <div class="photo">SD</div>
+        <div class="photo"></div>
         <div class="meta">
-          <h1>Ton Prénom Nom</h1>
-          <div class="role">Développeur Web — Front‑end / Full‑stack (à adapter)</div>
+          <h1>Sébastien Dupont</h1>
+          <div class="role">Développeur Web Senior — Full Stack</div>
           <div class="contacts">
-            <span class="badge">Paris, France</span>
-            <span class="small">+33 6 00 00 00 00</span>
-            <a class="small" href="#">email@exemple.com</a>
-            <a class="small" href="#">github.com/tonprofil</a>
-            <a class="small" href="#">portfolio.exemple.com</a>
+            <span class="badge">Marseille, France</span>
+            <span>📞 06 50 50 50 50</span>
+            <a href="mailto:monmail@mail.fr">monmail@mail.fr</a>
           </div>
         </div>
       </header>
 
       <main>
         <section>
-          <div>
-            <div class="section-title">Résumé</div>
-            <p class="summary">Développeur web avec X années d'expérience en création de sites et d'applications web. Spécialisé en HTML, CSS et JavaScript ; expérience en frameworks modernes. Orienté résultats : optimisation performance, expérience utilisateur, livraison fiable. (Remplace ce texte par 2–3 phrases concises et chiffrées si possible.)</p>
-          </div>
+          <div class="section-title">Présentation</div>
+          <p>Passionné par la création et l'innovation digitale, je suis un développeur web polyvalent maîtrisant HTML, CSS, JavaScript et PHP. Attentif aux dernières tendances technologiques, je conçois des sites et applications performants, interactifs et sécurisés. Dynamique, autonome et doté d’un esprit d’équipe, je suis prêt à relever de nouveaux défis pour contribuer au succès de projets ambitieux.</p>
 
-          <div style="margin-top:18px">
-            <div class="section-title">Expériences</div>
-            <div class="experience">
-              <article class="job">
-                <h3>Intitulé du poste — Nom de l'entreprise</h3>
-                <div class="meta">MM/AAAA — Aujourd'hui | Lieu | Taille équipe</div>
-                <ul>
-                  <li>Responsabilité ou réalisation principale (remplacer par un fait mesurable si possible).</li>
-                  <li>Exemple : Refonte d'un site e‑commerce — augmentation du taux de conversion de XX%.</li>
-                  <li>Technologies : HTML, CSS, JavaScript, (frameworks).</li>
-                </ul>
-              </article>
+          <div class="section-title" style="margin-top:20px">Expériences professionnelles</div>
+          <div class="experience">
+            <div class="job">
+              <h3>Développeur Web Senior — Tech Solutions Inc., Paris</h3>
+              <div class="meta">2016 – 2024</div>
+              <ul>
+                <li>Conception et développement d’applications web sur mesure.</li>
+                <li>Optimisation des performances front-end (+25% de rapidité).</li>
+                <li>Encadrement d’une équipe de 5 développeurs juniors.</li>
+              </ul>
+            </div>
 
-              <article class="job">
-                <h3>Intitulé précédent — Entreprise</h3>
-                <div class="meta">MM/AAAA — MM/AAAA | Lieu</div>
-                <ul>
-                  <li>Responsabilité principale ; équipe ; stack technique.</li>
-                  <li>Projet marquant / résultat quantifié.</li>
-                </ul>
-              </article>
+            <div class="job">
+              <h3>Développeur Front-End — Creative Web Agency, Paris</h3>
+              <div class="meta">2013 – 2016</div>
+              <ul>
+                <li>Intégration responsive et animation d’interfaces modernes.</li>
+                <li>Collaboration avec l’équipe UX/UI pour améliorer l’expérience client.</li>
+              </ul>
+            </div>
 
+            <div class="job">
+              <h3>Développeur Web Junior — Digital Factory, Lille</h3>
+              <div class="meta">2010 – 2013</div>
+              <ul>
+                <li>Participation à la maintenance et aux évolutions de sites e-commerce.</li>
+                <li>Implémentation de solutions dynamiques en PHP/MySQL.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <h3>Stagiaire Développeur Web — StartUp Innov, Nantes</h3>
+              <div class="meta">2009 – 2010</div>
+              <ul>
+                <li>Développement d’un module de gestion interne en PHP.</li>
+                <li>Découverte du cycle complet de développement web.</li>
+              </ul>
             </div>
           </div>
 
-          <div style="margin-top:18px">
-            <div class="section-title">Projets & Portfolio</div>
-            <p class="small">Liste 2–4 projets clés avec 1 phrase chacun : rôle, techno, résultat. Ex : « Application de gestion interne — React + Node — réduction du temps de saisie de 40% ». Ajoute des liens vers les projets.</p>
-          </div>
-
+          <div class="section-title" style="margin-top:20px">Formations et diplômes</div>
+          <ul style="line-height:1.8;color:#334155">
+            <li>2017 – 2018 : Certification Développeur Web Full Stack — OpenClassrooms</li>
+            <li>2015 – 2017 : Master Informatique — Université Pierre et Marie Curie, Paris</li>
+            <li>2012 – 2015 : Licence Informatique — Université Claude Bernard Lyon 1</li>
+            <li>2010 – 2012 : DUT Informatique — IUT de Lille</li>
+            <li>2007 – 2010 : Baccalauréat Scientifique</li>
+          </ul>
         </section>
 
         <aside>
-          <div>
-            <div class="section-title">Compétences techniques</div>
-            <div class="skills" style="margin-top:10px">
-              <div class="skill">HTML <span class="level">Avancé</span></div>
-              <div class="skill">CSS / SASS <span class="level">Avancé</span></div>
-              <div class="skill">JavaScript <span class="level">Avancé</span></div>
-              <div class="skill">React / Vue <span class="level">Intermédiaire</span></div>
-              <div class="skill">PHP / Laravel <span class="level">Intermédiaire</span></div>
-              <div class="skill">Git / CI <span class="level">Intermédiaire</span></div>
-            </div>
+          <div class="section-title">Compétences</div>
+          <div class="skills">
+            <p>HTML / CSS / JavaScript / PHP<br>Développement Front & Back-end<br>Création graphique (Photoshop, Illustrator)</p>
           </div>
 
-          <div style="margin-top:18px">
-            <div class="section-title">Formations</div>
-            <ul class="edu small">
-              <li>Nom diplôme — École — Année</li>
-              <li>Certification — Plateforme — Année</li>
-            </ul>
+          <div class="section-title" style="margin-top:20px">Langues</div>
+          <div class="lang">
+            <p>Français — Langue maternelle<br>Anglais — Courant<br>Espagnol — Intermédiaire</p>
           </div>
 
-          <div style="margin-top:18px">
-            <div class="section-title">Langues</div>
-            <ul class="lang small">
-              <li>Français — Langue maternelle</li>
-              <li>Anglais — Courant (B2/C1)</li>
-            </ul>
-          </div>
-
-          <div style="margin-top:18px">
-            <div class="section-title">Centres d'intérêt</div>
-            <p class="small">Ex : Design, photographie, sport, bénévolat. Reste bref et précis.</p>
+          <div class="section-title" style="margin-top:20px">Centres d’intérêt</div>
+          <div class="interet">
+            <p>Informatique, sport, nature, animaux.</p>
           </div>
         </aside>
       </main>
 
       <footer>
-        <div class="small">Remplace les placeholders par tes données réelles. N'oublie pas d'ajouter des chiffres quand c'est possible (amélioration %, trafic, temps gagné…)</div>
-        <div class="actions"><a href="#">Télécharger (PDF)</a></div>
+        <span>© 2024 Sébastien Dupont</span>
+        <a href="#">Facebook : Sébastien Dupont</a>
       </footer>
     </div>
   </div>
-
 </body>
 </html>
